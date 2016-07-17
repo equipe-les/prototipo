@@ -19,8 +19,9 @@ before_script:
   - adb shell input keyevent 82 &
 
 script:
-  - ./gradlew test
-  - ./gradlew connectedAndroidTest
+  - gradle --version
+  - gradle --stacktrace test
+  - gradle --stacktrace connectedAndroidTest
 
 notifications:
   slack: equipe-les:TEdWadiD9OvhQQXoCNEIl7Y9
