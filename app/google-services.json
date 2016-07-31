@@ -8,7 +8,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:329481027931:android:5bdde0c996f1c5bc",
         "android_client_info": {
-          "package_name": "br.edu.ufcg.ccc.protitipo"
+          "package_name": "br.edu.ufcg.ccc.prototipo"
         }
       },
       "oauth_client": [
@@ -16,7 +16,7 @@
           "client_id": "329481027931-20fdtcaqu5ibvs1n0ra1parbiqa6k11t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "br.edu.ufcg.ccc.protitipo",
+            "package_name": "br.edu.ufcg.ccc.prototipo",
             "certificate_hash": "2193D673CED96D0E05C63B33A86289CD3B59987E"
           }
         },
