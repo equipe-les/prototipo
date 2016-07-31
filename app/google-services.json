@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "329481027931",
+    "project_id": "firebase-prototipo"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329481027931:android:5bdde0c996f1c5bc",
+        "android_client_info": {
+          "package_name": "br.edu.ufcg.ccc.protitipo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329481027931-20fdtcaqu5ibvs1n0ra1parbiqa6k11t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.ufcg.ccc.protitipo",
+            "certificate_hash": "2193D673CED96D0E05C63B33A86289CD3B59987E"
+          }
+        },
+        {
+          "client_id": "329481027931-a302cfsv7s865ov0u94autueueg59d65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTTl2-dOBQEzm-f3lTJTsUKd0Z-k1YmZY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
