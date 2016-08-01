@@ -27,10 +27,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:22.0.0'
-    testCompile 'junit:junit:4.12'
 
+    compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'io.requery:requery:1.0.0-rc2'
     compile 'io.requery:requery-android:1.0.0-rc2'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    testCompile 'junit:junit:4.12'
     apt 'io.requery:requery-processor:1.0.0-rc2'
 }

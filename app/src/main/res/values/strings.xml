@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Prototipo</string>
+    <string name="app_name">Para onde vai meu tempo?</string>
+
+    <string name="navigation_drawer_open">Abrir navegação lateral</string>
+    <string name="navigation_drawer_close">Fechar navegação lateral</string>
+
+    <string name="action_settings">Configurações</string>
+    <string name="atividades">Atividades</string>
+    <string name="historico">Histórico</string>
+    <string name="acompanhamento">Acompanhamento</string>
+    <string name="outros">Outros</string>
+    <string name="sobre">Sobre</string>
 </resources>
