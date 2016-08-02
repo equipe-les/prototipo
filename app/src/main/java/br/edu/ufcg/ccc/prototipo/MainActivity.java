@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity
             setTitle(R.string.atividades);
             // TODO
         } else if (id == R.id.nav_historico) {
-            setTitle(R.string.historico);
+
             // TODO
         } else if (id == R.id.nav_acompanhamento) {
             setTitle(R.string.acompanhamento);
