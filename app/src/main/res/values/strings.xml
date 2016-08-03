@@ -10,16 +10,6 @@
     <string name="acompanhamento">Acompanhamento</string>
     <string name="outros">Outros</string>
     <string name="sobre">Sobre</string>
+    <string name="novaTi">Criar um Tempo Investido</string>
 
-    <string-array name="Planets">
-        <item>Sun</item>
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
-    </string-array>
 </resources>

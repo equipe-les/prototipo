@@ -1,7 +1,10 @@
 package br.edu.ufcg.ccc.prototipo;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -9,14 +12,38 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    FragmentManager fm = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (savedInstanceState == null) {
+            AtividadeFragment atividadeFragment = new AtividadeFragment();
+
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.add(R.id.layoutFrag, atividadeFragment);
+            ft.commit();
+        }
+
+
+        FloatingActionButton button = (FloatingActionButton) findViewById(R.id.fab);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setTitle(R.string.novaTi);
+                CriarTIFragment frag = new CriarTIFragment();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.layoutFrag, frag, "criar_ti");
+
+                ft.commit();
+            }
+        });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,6 +56,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -64,12 +93,28 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_atividades) {
             setTitle(R.string.atividades);
+            AtividadeFragment atividadeFragment = new AtividadeFragment();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.layoutFrag, atividadeFragment, "atividadeFragment");
+
+            ft.commit();
             // TODO
         } else if (id == R.id.nav_historico) {
+            setTitle(R.string.historico);
+            HistoricoFragment historicoFragment = new HistoricoFragment();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.layoutFrag, historicoFragment, "historicoFragment");
 
+            ft.commit();
             // TODO
         } else if (id == R.id.nav_acompanhamento) {
             setTitle(R.string.acompanhamento);
+
+            AcompanhamentoFragment frag = new AcompanhamentoFragment();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.layoutFrag, frag, "acompanhamentofragment");
+
+            ft.commit();
             // TODO
         } else if (id == R.id.nav_sobre) {
             setTitle(R.string.sobre);
@@ -80,4 +125,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
